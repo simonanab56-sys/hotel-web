@@ -1,0 +1,77 @@
+.amenities-section {
+  padding: 80px 0;
+  background-color: white;
+}
+
+.amenities-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin-top: 3rem;
+}
+
+.amenity-card {
+  text-align: center;
+  padding: 30px 20px;
+  border-radius: 10px;
+  background-color: #F5F5DC;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.amenity-card:hover {
+  transform: translateY(-5px);
+  border-color: #D4AF37;
+  box-shadow: 0 8px 20px rgba(212, 175, 55, 0.2);
+}
+
+.amenity-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.amenity-title {
+  font-family: 'Georgia', serif;
+  font-size: 1.3rem;
+  color: #1A2B49;
+  margin-bottom: 0.5rem;
+}
+
+.amenity-description {
+  color: #666;
+  line-height: 1.5;
+  font-size: 0.95rem;
+}
+
+@media (max-width: 768px) {
+  .amenities-section {
+    padding: 50px 0;
+  }
+
+  .amenities-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+  }
+
+  .amenity-card {
+    padding: 25px 15px;
+  }
+
+  .amenity-icon {
+    font-size: 2.5rem;
+  }
+
+  .amenity-title {
+    font-size: 1.1rem;
+  }
+
+  .amenity-description {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .amenities-grid {
+    grid-template-columns: 1fr;
+  }
+}
